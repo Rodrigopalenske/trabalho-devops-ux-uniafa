@@ -1,2 +1,2 @@
 # trabalho-devops-ux-uniafa
-Trabalho 3 período 2 Bimestre de Devops e UX
+Trabalho do 3°período no 2°Bimestre de Devops e UX
