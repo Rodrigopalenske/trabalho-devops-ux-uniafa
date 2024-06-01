@@ -4,56 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terra News</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b82f5ae24a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <!-- Itens de menu principais (perfil, logo, navegação de menu e busca) -->
-        <div class="principal">
+        <div id="header-top">
             <!-- Abre um menu lateral -->
-            <div class="menu-hamburguer">
-                <img src="" alt="menu-hamburguer">
+            <div class="conteudo-header">
+                <div id="burguer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <!-- Leva para a página principal -->
-
-            <div class="logo">
-                <a href="#"> <img src="" alt="logo"> </a>
+            <div class="conteudo-header">
+                <div id="logo">
+                    <a href="#"> <img src="" alt="logo"> </a>
+                </div>
             </div>
-            <div class="perfil">
-                <a href="#"> <img src="" alt="perfil-logo"></a>
+            <!-- Leva a página do perfil -->
+            <div class="conteudo-header">
+                <div id="perfil">
+                    <a href="#"> <i class="fa-solid fa-user"></i></a>
+                </div>
             </div>
-            <div class="busca">
-                <img src="" alt="busca">                
+            <!-- Permite pesquisa no site -->
+            <div class="conteudo-header">
+                <div id="pesquisa">
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
         </div>
         <br>
         <!-- Itens de menu secundario (migalhas de pão e menu de noticias) -->
-        <div class="navegacao-horizontal">
-            <div class="bread-sc">
-                <nav>
-                    <ul>
-                        <li><a href="#">pagina home</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="barra-vertical"></div>
-            <div class="menu-horizontal">
-                <nav>
-                    <ul>
-                        <li><a href="#">item1</a></li>
-                        <li><a href="#">item2</a></li>
-                        <li><a href="#">item3</a></li>
-                        <li><a href="#">item4</a></li>
-                    </ul>
-                </nav>
-                    
+        <div id="header-down">
+            <div class="conteudo-header-nav">
+                <div id="navegacao-horizontal">
+                    <div class="breadcrumb">
+                        <a href="">link</a>
+                        >
+                        <a href="">link</a>
+                    </div>
+                    <div class="menu-horizontal">
+                        <ul>
+                            <li><a href=""></a>Ultima notícia</a></li>
+                            <li><a href="">Tema 1</a></li>
+                            <li><a href="">Tema 2</a></li>
+                            <li><a href="">Tema 3</a></li>
+                            <li><a href="">Tema 4</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <hr>
-        <div class="noticia">
-            <div class="item-noticia">
-                <img src="" alt="item 1">
+        <section>
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 1">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -62,8 +74,8 @@
                 </div>
             </div>
 
-            <div class="item-noticia">
-                <img src="" alt="item 2">
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 2">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -72,8 +84,8 @@
                 </div>
             </div>
 
-            <div class="item-noticia">
-                <img src="" alt="item 3">
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 3">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -82,8 +94,8 @@
                 </div>
             </div>
 
-            <div class="item-noticia">
-                <img src="" alt="item 4">
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 4">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -92,8 +104,8 @@
                 </div>
             </div>
 
-            <div class="item-noticia">
-                <img src="" alt="item 5">
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 5">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -102,8 +114,8 @@
                 </div>
             </div>
 
-            <div class="item-noticia">
-                <img src="" alt="item 6">
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 6">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -111,26 +123,9 @@
                     <p>Subtitulo da notícia</p>
                 </div>
             </div>
-        </div>
-
-        <div class="propaganda">
-            <img src="" alt="propaganda">
-        </div>
-
-        <div class="noticia">            
-
-            <div class="item-noticia">
-                <img src="" alt="item 7">
-                <div class="titulo">
-                    <h2>Título da noticia</h2>
-                </div>
-                <div class="subtitulo">
-                    <p>Subtitulo da notícia</p>
-                </div>
-            </div>
-
-            <div class="item-noticia">
-                <img src="" alt="item 8">
+                 
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 7">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -139,8 +134,8 @@
                 </div>
             </div>
 
-            <div class="item-noticia">
-                <img src="" alt="item 9">
+            <div class="noticia">
+                <img src="WP (10).jpeg" alt="item 8">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -148,46 +143,72 @@
                     <p>Subtitulo da notícia</p>
                 </div>
             </div>
-        </div>
+
+            <div class="noticia">
+                <div class="propaganda">
+                    <img src="" alt="propaganda">
+                </div>
+            </div>
+        </section>
 
         <hr>
     </main>
     <footer>
-        <!-- Icones que levam para as redes sociais -->
-        <div class="social">
-            <h3>Nos siga</h3>
-            <a href="#"> <img src="" alt="facebook"></a>
-            <a href="#"> <img src="" alt="instagram"></a>
-            <a href="#"> <img src="" alt="youtube"></a>
-            <a href="#"> <img src="" alt="twitter/X"></a>
-        </div>
-        <!-- Navegação no site pelo footer -->
+        <section>
+            <div id="footer">
+                <div class="conteudo-footer">
+                    <ul class="social">
+                        <h3>Nos siga nas redes sociais:</h3>
+                        <li>
+                            <a href="https://pt-br.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
 
-        <div class="topicos">
-            <div class="barra-vertical"></div>
-                <h3>Tópicos</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">item1</a></li>
-                        <li><a href="#">item2</a></li>
-                        <li><a href="#">item3</a></li>
-                        <li><a href="#">item4</a></li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
-        <!-- Informações do footer -->
-        <div class="menu-footer">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li> 
-            </ul>
-        </div>
-        <!-- Logo que leva para a página principal -->
+                </div>
 
-        <div class="logo"><img src="" alt="logo da Terra News"></div>
+                <div class="conteudo-footer">
+                    <div class="topicos">
+                        <h3>Tópicos</h3>
+                        <ul>
+                            <li>algo</li>
+                            <li>algo</li>
+                            <li>algo</li>
+                        </ul>
+                        <ul>
+                            <li>algo</li>
+                            <li>algo</li>
+                            <li>algo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="conteudo-footer">
+                    <div class="menu">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="logo"><img src="WP (10).jpeg" alt="logo da Terra News"></div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
