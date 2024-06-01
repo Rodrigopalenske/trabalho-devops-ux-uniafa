@@ -1,0 +1,107 @@
+/* Todo o site */
+body{
+    background-color: aliceblue;
+}
+.linha-vertical-nav {
+    height: 10px;
+    border-left: 2px solid;
+}
+.linha-vertical-footer {
+    height: 30px;
+    border-left: 2px solid;
+}
+
+/* Parte do Header */
+header{
+    background-color: rgba(153, 153, 153, 0.32);
+}
+.conteudo-header{
+    margin: auto;
+}
+#logo{
+    width: 100%;
+}
+#perfil{
+    margin-left: 20px;
+}
+#pesquisa {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: -10;
+  }
+#header-top{
+    display: flex;
+    padding: 20px;
+}
+#navegacao-horizontal{
+    display: flex;
+    border-top: 1px solid black;
+}
+.breadcrumb {
+    margin: 20px;
+    padding-left: 50px;
+  }
+.menu-horizontal ul{
+    display: flex;
+    padding: 20px;
+    margin-left: 20px;
+    border-left: 1px solid black;
+}
+.menu-horizontal ul li{
+    margin-left: 20px;
+}
+
+/* Parte do Main */
+section{
+    width: 1500px;
+    margin: 0 auto;
+}
+.noticia img{
+    width: 100%;
+}
+.noticia{
+    display: inline-block;
+    width: 30%;
+    padding: 1.5%;
+    font-size: 20px;
+    line-height: 25px;
+    color: black;
+    margin-block-end: 10px;
+}
+
+/* Parte do Footer */
+footer{
+    background-color: rgba(153, 153, 153, 0.32);
+    margin-top: 20px;
+}
+#footer {
+    display: flex;
+}
+.conteudo-footer{
+    display: flex;
+    width: 100%;
+    padding: 1.5%;
+    font-size: 20px;
+    line-height: 25px;
+    color: black;
+    margin-block-end: 10px;
+    margin: auto;
+    border-right: 1px solid black;
+}
+.social li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 50px;
+}
+.topicos ul {
+    float: right;
+    margin-right: 100px;
+}
+.menu{
+    margin: auto;
+}
+.logo img {
+    width: 60%;
+    margin: 30px;
+}
