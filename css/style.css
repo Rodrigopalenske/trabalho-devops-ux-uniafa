@@ -116,13 +116,6 @@ footer{
     margin-right: 100px;
     margin-left: 75px;
 }
-
-.topico i {
-    font-size: 16px;
-}
-
-
-
 .conteudo-footer .social, .conteudo-footer .topicos{
     margin-inline: auto;
 }
@@ -180,7 +173,7 @@ a {
 
 .menu-lateral h2 {
     padding-left: 11px;
-    font-size: 21px;
+    font-size: 19px;
 }
 .menu-lateral h1 {
     font-size: 22px;
@@ -232,8 +225,6 @@ a {
     border:#000, 1px;
     display: flex;
     padding: 13px;
-    padding-left: 21px;
-    padding-right: 23px;
 }
 
 #perfil .perfil-img {
