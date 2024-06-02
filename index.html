@@ -11,7 +11,6 @@
 </head>
 <body>
     <header>
-
         <div id="header-top">
             <!-- Abre um menu lateral -->
             <div class="conjunto-menu">
@@ -105,44 +104,37 @@
                                         <i class="fa-solid fa-file-lines"></i>
                                         <h2>Termos de uso</h2>
                                     </li>
-                                    </a>
-                                    <a href="#">
+                                </a>
+                                <a href="#">
                                     <li onclick="">
                                         <i class="fa-solid fa-user-shield"></i>
                                         <h2>Termos de privacidade</h2>
                                     </li>
-                                    </a>
+                                </a>
                               </ul>
                         </div>
-                        
-                    </div>
-
-                    
-                    <!---->
-                </div>
-                <!-- Leva para a página principal -->
-                <div class="conteudo-header">
-                    <div id="logo">
-                        <a href="#"> <img src="" alt="logo"> </a>
                     </div>
                 </div>
             </div>
-            <div class="conjunto-menu">
-                <!-- Leva a página do perfil -->
-                <div class="conteudo-header">
-                    <div id="perfil">
-                        <a href="#"> <i class="fa-solid fa-user"></i></a>
-                    </div>
-                </div>
-                <!-- Permite pesquisa no site -->
-                <div class="conteudo-header">
-                    <div id="pesquisa">
-                        <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+            <!-- Leva para a página principal -->
+            <div class="conteudo-header">
+                <div id="logo">
+                    <a href="#"> <img src="" alt="logo"> </a>
                 </div>
             </div>
-            
+            <!-- Leva a página do perfil -->
+            <div class="conteudo-header">
+                <div id="perfil">
+                    <a href="#"> <i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+            <!-- Permite pesquisa no site -->
+            <div class="conteudo-header">
+                <div id="pesquisa">
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
         </div>
         <br>
         <!-- Itens de menu secundario (migalhas de pão e menu de noticias) -->
@@ -322,31 +314,5 @@
             </div>
         </section>
     </footer>
-
-
-    <script>
-        function menuBurgerAtivar() {
-            const menuLateral = document.querySelector(".menu-lateral");
-            const overlay = document.querySelector(".overlay");
-
-            menuLateral.classList.toggle("active");
-            overlay.classList.toggle("active");
-
-        }
-        function menuBurgerDesativar() {
-            const menuLateral = document.querySelector(".menu-lateral");
-            const overlay = document.querySelector(".overlay");
-
-            menuLateral.classList.remove("active");
-            overlay.classList.remove("active");
-        }
-        function modoEscuro() {
-
-        }
-        function tamanhoFonte() {
-            
-        }
-
-    </script>
 </body>
 </html>
