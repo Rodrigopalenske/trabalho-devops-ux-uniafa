@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b82f5ae24a.js" crossorigin="anonymous"></script>
+    <title>Terra News</title>
+</head>
+<body>
+
+    <main>
+        <!-- Informações da página -->
+        <div class="conteudo-main">
+            <a href="#"> <i class="fa-solid fa-user"></i></a>
+            <h1>Cadastre-se</h1>
+            <div class="permissao-cadastro">
+                <h5>Usuário cadastrado com sucesso!</h5>
+                <p>Clique aqui para voltar para a página de login</p>
+            </div>
+            <div class="permissao-cadastro">
+                <h5>Usuário cadastrado com sucesso!</h5>
+                <p>Clique aqui para voltar para a página de login</p>
+            </div>
+        </div>
+        <!-- Formulário de cadastro deve se fazer algumas verificações -->
+        <div class="conteudo-main">
+            <!-- Envia temporariamente para a mesma página, deve se enviar para uma página de validações -->
+            <form action="#" method="post">
+                <!-- Deve ser fornecido -->
+                <div class="conjunto-form">
+                    <label for="nome">Nome completo</label>
+                    <br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                <br>
+                <!-- Deve ser um e-mail existente -->
+                <div class="conjunto-form">
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="exemplo@terra.com" required>
+                </div>
+                <br>
+                <!-- Não pode já estar cadastrado -->
+                <div class="conjunto-form">
+                    <label for="usuario">Nome de Usuário</label>
+                    <br>
+                    <input type="text" id="usuario" name="usuario" placeholder="Nome usuário" required>
+                </div>
+                <br>
+                <!-- Deve conter 8 caracteres tendo no mínimo 3 números e 1 caractere especial  -->
+                <div class="conjunto-form">
+                    <div class="senha">
+                        <label for="senha">Senha</label>
+                        <br>
+                        <input type="password" id="senha" name="senha" placeholder="8 caracteres | min. 3 números | min. 1 caractere especial" required style="width: 100%;">
+                </div>
+                </div>
+                <br>
+                <!-- Deve ser o mesmo que a senha acima -->
+                <div class="conjunto-form">
+                    <div class="senha">
+                        <label for="senhaConfirma">Confirmação de senha</label>
+                        <br>
+                        <input type="password" id="senhaConfirma" name="senhaConfirma" placeholder="Repita a mesma senha" required>
+                    </div>
+                </div>
+                <br>
+                <!-- Devem ser aceito -->
+                <div class="termo">
+                    <input type="checkbox" name="termo" id="termo" required>
+                    <p>Li e concordo com os <a href="">Termos de Uso</a> e <a href="">Política de Privacidade</a>.</p>
+                </div>
+                <br>
+                <button type="submit">Cadastrar-se</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
