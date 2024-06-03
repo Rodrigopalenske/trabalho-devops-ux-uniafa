@@ -13,15 +13,16 @@
     <main>
         <!-- Informações da página -->
         <div class="conteudo-main">
-            <a href="#"> <i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-user"></i>
             <h1>Cadastre-se</h1>
-            <div class="permissao-cadastro">
+
+            <div class="permissao-cadastro-sucesso" onclick='window.location.href="login.html"'>
                 <h5>Usuário cadastrado com sucesso!</h5>
                 <p>Clique aqui para voltar para a página de login</p>
             </div>
-            <div class="permissao-cadastro">
-                <h5>Usuário cadastrado com sucesso!</h5>
-                <p>Clique aqui para voltar para a página de login</p>
+            <div class="permissao-cadastro-erro">
+                <h5>Algo deu errado!</h5>
+                <p>Tente novamente e confira se as informações estão corretas</p>
             </div>
         </div>
         <!-- Formulário de cadastro deve se fazer algumas verificações -->
@@ -75,8 +76,46 @@
                 <br>
                 <button type="submit">Cadastrar-se</button>
             </form>
+            <br>
+            <!-- Para Teste de permissao simulada -->
+            <p>Isso é Apenas para fins de teste e visualização de cenários</p>
+            <br>
+            <div class="ativa-sucesso" onclick="sucessoAtiva()" style="text-decoration: underline;">
+                Clique para Sucesso
+            </div>
+            <br>
+            <div class="ativa-erro" onclick="erroAtiva()" style="text-decoration: underline;">
+                Clique para erro
+            </div>
         </div>
     </main>
+
+    <script>
+        function sucessoAtiva(){
+            const mensagemSucesso = document.querySelector(".permissao-cadastro-sucesso");
+            const mensagemErro = document.querySelector(".permissao-cadastro-erro");
+
+            mensagemSucesso.classList.toggle("active");
+            mensagemErro.classList.remove("active");
+        }
+        function erroAtiva(){
+            const mensagemErro = document.querySelector(".permissao-cadastro-erro");
+            const mensagemSucesso = document.querySelector(".permissao-cadastro-sucesso");
+
+            mensagemErro.classList.toggle("active");
+            mensagemSucesso.classList.remove("active");
+        }
+        function sucessoDesativa(){
+            const mensagemSucesso = document.querySelector(".permissao-cadastro-sucesso");
+
+            mensagemSucesso.classList.remove("active");
+        }
+        function erroDesativa(){
+            const mensagemErro = document.querySelector(".permissao-cadastro-erro");
+
+            mensagemErro.classList.remove("active");
+        }
+    </script>
 
 </body>
 </html>

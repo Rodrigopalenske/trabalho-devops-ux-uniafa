@@ -243,3 +243,88 @@ a {
     border-right: none;
     border-top: none;
 }
+
+.permissao-cadastro-sucesso {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #0e6929;
+    color: #fff;
+    font-size: 2vh;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.permissao-cadastro-erro {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #690e0e;
+    color: #fff;
+    font-size: 2vh;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.permissao-cadastro-sucesso.active {
+    visibility:visible;
+}
+
+.permissao-cadastro-erro.active{
+    visibility:visible;
+}
+
+.conteudo-main i {
+    border-radius: 97%;
+    color: white;
+    background-color: black;
+    margin: 3vh;
+    padding: 13px;
+    font-size: 5vh;
+}
+
+.conteudo-main h1 {
+    font-size: 40px;
+}
+
+conjunto-form {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align-last: start;
+}
+
+form label {
+    font-size: 3.3vh;
+}
+form input {
+    font-size: 2.6vh;
+    border: solid, 1px;
+    padding: 1px;
+    margin: 4px;
+    width: 70vh;
+    max-width: 70vh;
+    text-align-last: left;
+}
+
+form .termo {
+    display: flex;
+    justify-content: center;
+}
+
+form .termo a {
+    color: rgb(0, 89, 255);
+    text-decoration: underline;
+}
+
+form .termo input {
+    padding: 0px;
+    margin: 0px;
+    width: 10vh;
+}
+
+form button {
+    font-size: 21px;
+    margin: 14px;
+}
