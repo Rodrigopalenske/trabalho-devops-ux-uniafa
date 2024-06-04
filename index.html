@@ -16,17 +16,17 @@
             <div class="conjunto-menu">
                 <div class="conteudo-header">
                     <div id="burger">
-                        <i class="fa-solid fa-bars" onclick="menuBurgerAtivar()"></i>
+                        <a href="#"><i class="fa-solid fa-bars" onclick="menuBurgerAtivar()">Menu</i></a>
                     </div>
                     <!--Inutiliza o fundo do site sem ser o menu-->
                     <div class="overlay" onclick="menuBurgerDesativar()"></div>
                     <!-- Parte de cima do menu-->
                     <div class="menu-lateral">
                         <div class="fechar">
-                            <i class="fa-solid fa-x" onclick="menuBurgerDesativar()"></i>
+                            <a href="#"><i class="fa-solid fa-x" onclick="menuBurgerDesativar()"></i></a>
                             <!-- Informações do perfíl da pessoa -->
                             <!-- Leva para o perfíl da pessoa -->
-                            <div id="perfil">
+                            <div id="perfil-menu">
                                 <button style="background-color: white;">
                                     <div class="perfil-img">
                                         <a href="#"> <i class="fa-solid fa-user"></i></a>
@@ -117,24 +117,24 @@
                 </div>
             </div>
             <!-- Leva para a página principal -->
-            <div class="conteudo-header">
+            
                 <div id="logo">
                     <a href="#"> <img src="" alt="logo"> </a>
                 </div>
-            </div>
-            <!-- Leva a página do perfil -->
-            <div class="conteudo-header">
-                <div id="perfil">
-                    <a href="#"> <i class="fa-solid fa-user"></i></a>
-                </div>
-            </div>
-            <!-- Permite pesquisa no site -->
-            <div class="conteudo-header">
+
+                <!-- Permite pesquisa no site -->
+            
                 <div id="pesquisa">
-                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
                     <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
                 </div>
+            
+            <!-- Leva a página do perfil -->
+            
+            <div id="perfil">
+                <a href="#"> <i class="fa-solid fa-user"><p>Perfil</p></i></a>
             </div>
+            
         </div>
         <br>
         <!-- Itens de menu secundario (migalhas de pão e menu de noticias) -->
@@ -163,11 +163,10 @@
     </header>
     <!-- Conteúdo -->
     <main>
-        <hr>
         <section>
             <!-- Leva para a notícia selecionada -->
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 1">
+                <img src="" alt="item 1">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -177,7 +176,7 @@
             </div>
 
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 2">
+                <img src="" alt="item 2">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -187,7 +186,7 @@
             </div>
 
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 3">
+                <img src="" alt="item 3">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -197,7 +196,7 @@
             </div>
 
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 4">
+                <img src="" alt="item 4">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -207,7 +206,7 @@
             </div>
 
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 5">
+                <img src="" alt="item 5">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -217,7 +216,7 @@
             </div>
 
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 6">
+                <img src="" alt="item 6">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -227,7 +226,7 @@
             </div>
                  
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 7">
+                <img src="" alt="item 7">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
@@ -237,7 +236,7 @@
             </div>
 
             <div class="noticia">
-                <img src="WP (10).jpeg" alt="item 8">
+                <img src="" alt="item 8">
                 <div class="titulo">
                     <h2>Título da noticia</h2>
                 </div>
