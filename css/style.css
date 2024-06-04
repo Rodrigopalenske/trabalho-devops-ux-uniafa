@@ -50,6 +50,7 @@ header{
     position: absolute;
     font-size: 3vh;
     left: 35vh;
+<<<<<<< Updated upstream
 }
 #burger a {
     display: flex;
@@ -66,6 +67,32 @@ header{
     width: auto;
     position: absolute;
     left: 60vh;
+=======
+}
+#burger a {
+    display: flex;
+    padding-left: 6px;
+    text-decoration: none;
+}
+#burger p{
+    text-decoration: underline;
+}
+#burger i {
+    padding-right: 10px;
+}
+#logo-header{
+    width: auto;
+    position: absolute;
+    left: 60vh;
+    margin: auto;
+}
+#logo-header img {
+    width: 9%;
+    margin: auto;
+    position: relative;
+    top: -2vh;
+    left: -35vh;
+>>>>>>> Stashed changes
 }
 #perfil{
     position: absolute;
@@ -163,11 +190,22 @@ footer{
     padding: 15px;
     font-size: 50px;
 }
+.topicos{
+    text-align: center;
+}
 .topicos ul {
-    float: right;
     margin-right: 100px;
     margin-left: 75px;
 }
+.logo {
+    margin: auto;
+    margin-left: auto;
+    margin-left: 5vh;
+  }
+.logo img {
+    width: 100%;
+}
+
 .conteudo-footer .social, .conteudo-footer .topicos{
     margin-inline: auto;
 }
@@ -178,11 +216,11 @@ footer{
 .menu{
     margin: auto;
 }
-.logo img {
-    width: 60%;
-    margin: 30px;
-}
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 /* Menu lateral */
 .conjunto-menu {
     display: inline-flex;
@@ -304,20 +342,32 @@ footer{
         position: absolute;
         left: 2vh;
     }
+<<<<<<< Updated upstream
     #logo{
+=======
+    #logo-header img{
+>>>>>>> Stashed changes
         display: none;
     }
     #pesquisa{
         position: absolute;
+<<<<<<< Updated upstream
         left: 20vh;
+=======
+        right: 2vh;
+>>>>>>> Stashed changes
         width: 31vh;
         height: 3vh;
         padding: 5px;
         top: 2vh;
     }
     #perfil{
+<<<<<<< Updated upstream
         position: absolute;
         right: 17vh;
+=======
+        display: none;
+>>>>>>> Stashed changes
     }
     .breadcrumb {
         display: flex;
@@ -335,4 +385,45 @@ footer{
         padding: 0;
         margin: 3vh auto;
     }
+<<<<<<< Updated upstream
+=======
+    #footer{
+        display: block;
+    }
+    .conteudo-footer{
+        padding: 2vh;
+        margin-bottom: 6vh;
+        border-bottom: 1px solid;
+        width: 96%;
+    }
+    .topicos {
+        width: 100%;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topicos h3{
+        font-size: 4vh;
+    }
+    .topicos ul{
+        margin: auto;
+    }
+    .menu{
+        text-align: center;
+        margin-bottom: 6vh;
+    }
+    .menu h3{
+        font-size: 4vh;
+        margin-bottom: 2vh;
+    }
+    .logo{
+        margin: auto;
+        width: 30%;
+        text-align: center;
+    }
+    .menu-lateral{
+        width: 46%;
+    }
+>>>>>>> Stashed changes
 }
