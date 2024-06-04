@@ -50,24 +50,6 @@ header{
     position: absolute;
     font-size: 3vh;
     left: 35vh;
-<<<<<<< Updated upstream
-}
-#burger a {
-    display: flex;
-    padding-left: 6px;
-    text-decoration: none;
-}
-#burger p{
-    text-decoration: underline;
-}
-#burger i {
-    padding-right: 10px;
-}
-#logo{
-    width: auto;
-    position: absolute;
-    left: 60vh;
-=======
 }
 #burger a {
     display: flex;
@@ -92,7 +74,6 @@ header{
     position: relative;
     top: -2vh;
     left: -35vh;
->>>>>>> Stashed changes
 }
 #perfil{
     position: absolute;
@@ -217,10 +198,6 @@ footer{
     margin: auto;
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 /* Menu lateral */
 .conjunto-menu {
     display: inline-flex;
@@ -342,32 +319,19 @@ footer{
         position: absolute;
         left: 2vh;
     }
-<<<<<<< Updated upstream
-    #logo{
-=======
     #logo-header img{
->>>>>>> Stashed changes
         display: none;
     }
     #pesquisa{
         position: absolute;
-<<<<<<< Updated upstream
-        left: 20vh;
-=======
         right: 2vh;
->>>>>>> Stashed changes
         width: 31vh;
         height: 3vh;
         padding: 5px;
         top: 2vh;
     }
     #perfil{
-<<<<<<< Updated upstream
-        position: absolute;
-        right: 17vh;
-=======
         display: none;
->>>>>>> Stashed changes
     }
     .breadcrumb {
         display: flex;
@@ -385,8 +349,6 @@ footer{
         padding: 0;
         margin: 3vh auto;
     }
-<<<<<<< Updated upstream
-=======
     #footer{
         display: block;
     }
@@ -425,5 +387,4 @@ footer{
     .menu-lateral{
         width: 46%;
     }
->>>>>>> Stashed changes
 }
