@@ -42,6 +42,13 @@ header{
     font-size: 3vh;
     left: 35vh;
 }
+#burger a {
+    display: flex;
+    padding-left: 6px;
+}
+#burger i {
+    padding-right: 10px;
+}
 #logo{
     width: auto;
     position: absolute;
