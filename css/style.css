@@ -11,10 +11,16 @@ body{
     height: 30px;
     border-left: 2px solid;
 }
-a:hover{
-    text-decoration: dashed;
-    border-bottom: 1px solid black;
+a, h2, p{
+    font-family: Arial;
+}
+a{
+    text-decoration: underline;
     font-weight: bolder;
+    color: black;
+}
+a:hover{
+    color: grey;
 }
 
 
@@ -34,6 +40,9 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#header-down{
+    background-color: whitesmoke;
+}
 .conteudo-header{
     margin: auto;
 }
@@ -45,6 +54,10 @@ header{
 #burger a {
     display: flex;
     padding-left: 6px;
+    text-decoration: none;
+}
+#burger p{
+    text-decoration: underline;
 }
 #burger i {
     padding-right: 10px;
@@ -58,7 +71,14 @@ header{
     position: absolute;
     right: 30vh;
     width: 1%;
-    top: 2vh;
+    top: 3vh;
+}
+#perfil a{
+    display: flex;
+    padding-left: 10px;
+}
+#perfil i{
+    padding-right: 10px;
 }
 
 #pesquisa {
@@ -95,24 +115,29 @@ header{
 /* Parte do Main */
 main {
     text-align-last:center;
-    margin: 29vh auto 13vh auto;
+    margin: 25vh auto 13vh auto;
 }
 section{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
 }
 .noticia img{
     width: 100%;
+    height: 100%;
 }
 .noticia{
     display: inline-block;
-    width: 30%;
-    padding: 1.5%;
+    width: 46%;
+    padding: 0.5%;
     font-size: 20px;
     line-height: 25px;
     color: black;
     margin-block-end: 10px;
     box-shadow: 1px 1px 2px;
+    margin: 20px;
+}
+.propaganda{
+
 }
 /* Parte do Footer */
 footer{
@@ -158,16 +183,10 @@ footer{
     margin: 30px;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
+/* Menu lateral */
 .conjunto-menu {
     display: inline-flex;
 }
-
-/* Menu lateral */
 .menu-lateral {
     position: fixed;
     top: 0;
@@ -212,7 +231,7 @@ a {
 }
 
 .overlay {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -269,4 +288,51 @@ a {
     border-left: none;
     border-right: none;
     border-top: none;
+}
+
+/* Renponsividade para Desktop, tablet e celular */
+@media (max-width: 1300px){
+
+}
+
+@media (max-width: 767px) and (min-width:481px){
+
+}
+
+@media (max-width: 480px){
+    #burger{
+        position: absolute;
+        left: 2vh;
+    }
+    #logo{
+        display: none;
+    }
+    #pesquisa{
+        position: absolute;
+        left: 20vh;
+        width: 31vh;
+        height: 3vh;
+        padding: 5px;
+        top: 2vh;
+    }
+    #perfil{
+        position: absolute;
+        right: 17vh;
+    }
+    .breadcrumb {
+        display: flex;
+        padding: 0vh;
+    }
+    .menu-horizontal ul{
+        width: 80%;
+        padding-left: 0vh;
+    }
+    .menu-horizontal ul li{
+    width: 20%;
+    }
+    .noticia{
+        width: 100%;
+        padding: 0;
+        margin: 3vh auto;
+    }
 }
