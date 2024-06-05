@@ -306,12 +306,124 @@ footer{
 }
 
 /* Renponsividade para Desktop, tablet e celular */
-@media (max-width: 1300px){
-
+@media (max-width: 1482px) and (min-width: 767px){
+    #burger{
+        position: unset;
+    }
+    #logo-header{
+        position: unset;
+        margin: -10px;
+        width: 10vh;
+    }
+    #logo-header img{
+        position: unset;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #pesquisa{
+        display: flex;
+        position: unset;
+        width: 28vh;
+        margin-left: 0vh;
+        align-items: center;
+    }
+    #perfil{
+        position: unset;
+        padding-right: 10vh;
+        padding-top: 2vh;
+    }
+    .noticia{
+        display: inline-block;
+        width: 42%;
+        padding: 1px;
+        margin: 4vh 2vh;
+    }
+    .menu-horizontal ul li{
+        margin: 1vh;
+    }
+    .breadcrumb {
+        display: flex;
+        margin: 2vh;
+        align-items: center;
+    }
+    .menu-lateral{
+        width: 35%;
+        max-width: 50%;
+        min-width: 35%;
+    }
 }
 
-@media (max-width: 767px) and (min-width:481px){
-
+@media (max-width: 767px) and (min-width: 480px){
+    #burger{
+        position: unset;
+    }
+    #logo-header{
+        display: none;
+    }
+    #pesquisa{
+        position: unset;
+        width: 28vh;
+        margin-left: 0vh;
+    }
+    #perfil{
+        position: unset;
+        padding-right: 10vh;
+        padding-top: 2vh;
+    }
+    .noticia{
+        display: inline-block;
+        width: 42%;
+        padding: 1px;
+        margin: 4vh 2vh;
+    }
+    .menu-horizontal ul li{
+        margin: 1vh;
+    }
+    .breadcrumb {
+        display: flex;
+        margin: 2vh;
+        align-items: center;
+      }
+      #footer{
+        display: block;
+    }
+    .conteudo-footer{
+        padding: 2vh;
+        margin-bottom: 6vh;
+        border-bottom: 1px solid !important;
+        border: none;
+        width: 96%;
+    }
+    .topicos {
+        width: 100%;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topicos h3{
+        font-size: 4vh;
+    }
+    .topicos ul{
+        margin: auto;
+    }
+    .menu{
+        text-align: center;
+        margin-bottom: 6vh;
+    }
+    .menu h3{
+        font-size: 4vh;
+        margin-bottom: 2vh;
+    }
+    .logo{
+        margin: auto;
+        width: 30%;
+        text-align: center;
+    }
+    .menu-lateral{
+        width: 60%;
+    }
 }
 
 @media (max-width: 480px){
@@ -323,7 +435,7 @@ footer{
         display: none;
     }
     #pesquisa{
-        position: absolute;
+        position: unset;
         right: 2vh;
         width: 31vh;
         height: 3vh;
@@ -385,6 +497,6 @@ footer{
         text-align: center;
     }
     .menu-lateral{
-        width: 46%;
+        width: 60%;
     }
 }
