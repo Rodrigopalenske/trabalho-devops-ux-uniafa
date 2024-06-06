@@ -305,6 +305,7 @@ footer{
     border-top: none;
 }
 
+
 /* Renponsividade no index */
 @media (max-width: 1482px) and (min-width: 767px){
     #burger{
@@ -497,6 +498,199 @@ footer{
         text-align: center;
     }
     .menu-lateral{
-        width: 60%;
+      width: 60%;
+  }
+}
+
+/* Página de cadastro */
+#cadastro {
+    margin: 2vh;
+    margin-left: 51vh;
+    margin-right: 51vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.requisitos-senha {
+    font-size: 18px;
+    text-align-last: left;
+    padding-left: 1vh;
+    align-items: flex-start;
+    margin-left: 25%;
+}
+
+.requisitos-senha ul {
+    margin-left: 21vh;
+}
+
+.requisitos-senha li {
+    padding: 5px;
+}
+
+.requisito-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.permissao-cadastro-sucesso, .permissao-cadastro-erro {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 2vh;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.permissao-cadastro-sucesso {
+    background-color: #0e6929;
+}
+
+.permissao-cadastro-erro {
+    background-color: #690e0e;
+}
+
+.permissao-cadastro-sucesso.active {
+    visibility:visible;
+}
+
+.permissao-cadastro-erro.active{
+    visibility:visible;
+}
+
+.conteudo-main i {
+    border-radius: 97%;
+    color: white;
+    background-color: black;
+    margin: 3vh;
+    padding: 13px;
+    font-size: 5vh;
+}
+
+.conteudo-main h1 {
+    font-size: 1.6rem;
+}
+
+conjunto-form {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align-last: start;
+}
+
+form input {
+    font-size: 0.9rem;
+    border: solid;
+    padding: 4px;
+    margin: 1vh;
+    width: 70vh;
+    max-width: 53vh;
+    text-align-last: left;
+}
+
+form .termo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+form .requisitos-senha {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+form .termo a {
+    color: rgb(0, 89, 255);
+    text-decoration: underline;
+}
+
+form .termo input, form .requisitos-senha input {
+    padding: 0px;
+    margin: 0px;
+    width: 3vh;
+}
+
+form button {
+    font-size: 17px;
+    margin: 14px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsividade de cadastro */
+@media screen and (min-width: 1324px) and (max-width: 1461px) {
+    #cadastro {
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+}
+
+@media screen and (min-width: 1104px) and (max-width: 1323px) {
+    #cadastro {
+        margin-left: 24%;
+        margin-right: 24%;
+    }
+    .permissao-cadastro-erro, .permissao-cadastro-sucesso {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1103px) {
+    #cadastro {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+    .permissao-cadastro-erro, .permissao-cadastro-sucesso {
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 622px) and (max-width: 799px) {
+    #cadastro {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .permissao-cadastro-erro, .permissao-cadastro-sucesso {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 512px) and (max-width: 621px) {
+    #cadastro {
+        margin: 0px;
+    }
+    form input {
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 43vh;
+    }
+    .permissao-cadastro-erro, .permissao-cadastro-sucesso {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    #cadastro {
+        margin: 0px;
+    }
+    form input {
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 38vh;
+    }
+    .requisitos-senha{
+        margin-left: 10px;
+    }
+    .permissao-cadastro-erro, .permissao-cadastro-sucesso {
+        width: 100%;
     }
 }
