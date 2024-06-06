@@ -305,7 +305,7 @@ footer{
     border-top: none;
 }
 
-/* Renponsividade para Desktop, tablet e celular */
+/* Renponsividade para tablet e celular */
 @media (max-width: 1482px) and (min-width: 767px){
     #burger{
         position: unset;
