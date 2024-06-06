@@ -1,7 +1,7 @@
 
 /* Todo o site */
 body{
-    background-color: aliceblue;
+    background-color: rgb(247, 250, 253);
 }
 .linha-vertical-nav {
     height: 10px;
@@ -11,47 +11,97 @@ body{
     height: 30px;
     border-left: 2px solid;
 }
+a, h2, p{
+    font-family: Arial;
+}
+a{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+}
+a:hover{
+    color: grey;
+}
+
+
 /* Parte do Header */
 header{
-    background-color: rgba(153, 153, 153, 0.32);
-}
-
-header {
-    margin-left: 30vh;
-    margin-right: 30vh;
+    background-color: rgb(219, 219, 219);
     text-align-last:center;
+    position: fixed;
+    width: 100%;
+    height: 17%;
+    top: 0;
 }
 
-main {
-    text-align-last:center;
+#header-top{
+    display: flex;
+    padding: 3vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
+#header-down{
+    background-color: whitesmoke;
+}
 .conteudo-header{
     margin: auto;
 }
 #burger {
-    margin-right: 80px;
+    position: absolute;
+    font-size: 3vh;
+    left: 35vh;
 }
-#logo{
-    width: 100%;
+#burger a {
+    display: flex;
+    padding-left: 6px;
+    text-decoration: none;
+}
+#burger p{
+    text-decoration: underline;
+}
+#burger i {
+    padding-right: 10px;
+}
+#logo-header{
+    width: auto;
+    position: absolute;
+    left: 60vh;
+    margin: auto;
+}
+#logo-header img {
+    width: 9%;
+    margin: auto;
+    position: relative;
+    top: -2vh;
+    left: -35vh;
 }
 #perfil{
-    margin-left: 20px;
-    margin-right: 80px;
+    position: absolute;
+    right: 30vh;
+    width: 1%;
+    top: 3vh;
+}
+#perfil a{
+    display: flex;
+    padding-left: 10px;
+}
+#perfil i{
+    padding-right: 10px;
 }
 
 #pesquisa {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
-    padding-left: 32px;
-  }
-#header-top{
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    position: absolute;
+    right: 40vh;
+    width: 18%;
+    top: 1vh;
 }
+.fa-solid.fa-magnifying-glass {
+    float: left;
+  }
+
 #navegacao-horizontal{
     display: flex;
     border-top: 1px solid black;
@@ -71,25 +121,35 @@ main {
 }
 
 /* Parte do Main */
+main {
+    text-align-last:center;
+    margin: 25vh auto 13vh auto;
+}
 section{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
 }
 .noticia img{
     width: 100%;
+    height: 100%;
 }
 .noticia{
     display: inline-block;
-    width: 30%;
-    padding: 1.5%;
+    width: 46%;
+    padding: 0.5%;
     font-size: 20px;
     line-height: 25px;
     color: black;
     margin-block-end: 10px;
+    box-shadow: 1px 1px 2px;
+    margin: 20px;
+}
+.propaganda{
+
 }
 /* Parte do Footer */
 footer{
-    background-color: rgba(153, 153, 153, 0.32);
+    background-color: rgb(219, 219, 219);
     margin-top: 20px;
 }
 #footer {
@@ -111,11 +171,22 @@ footer{
     padding: 15px;
     font-size: 50px;
 }
+.topicos{
+    text-align: center;
+}
 .topicos ul {
-    float: right;
     margin-right: 100px;
     margin-left: 75px;
 }
+.logo {
+    margin: auto;
+    margin-left: auto;
+    margin-left: 5vh;
+  }
+.logo img {
+    width: 100%;
+}
+
 .conteudo-footer .social, .conteudo-footer .topicos{
     margin-inline: auto;
 }
@@ -126,21 +197,11 @@ footer{
 .menu{
     margin: auto;
 }
-.logo img {
-    width: 60%;
-    margin: 30px;
-}
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
+/* Menu lateral */
 .conjunto-menu {
     display: inline-flex;
 }
-
-/*   */
 .menu-lateral {
     position: fixed;
     top: 0;
@@ -185,7 +246,7 @@ a {
 }
 
 .overlay {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -220,19 +281,19 @@ a {
     font-size: 3vh;
 }
 
-#perfil button {
+#perfil-menu button {
     background-color: #fff;
     border:#000, 1px;
     display: flex;
     padding: 13px;
 }
 
-#perfil .perfil-img {
+#perfil-menu .perfil-img {
     margin-right: 24px;
     margin-left: 10px;
 }
 
-#perfil .perfil-texto {
+#perfil-menu .perfil-texto {
     margin-right: 24px;
     margin-left: 10px;
 }
@@ -244,6 +305,204 @@ a {
     border-top: none;
 }
 
+
+/* Renponsividade no index */
+@media (max-width: 1482px) and (min-width: 767px){
+    #burger{
+        position: unset;
+    }
+    #logo-header{
+        position: unset;
+        margin: -10px;
+        width: 10vh;
+    }
+    #logo-header img{
+        position: unset;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #pesquisa{
+        display: flex;
+        position: unset;
+        width: 28vh;
+        margin-left: 0vh;
+        align-items: center;
+    }
+    #perfil{
+        position: unset;
+        padding-right: 10vh;
+        padding-top: 2vh;
+    }
+    .noticia{
+        display: inline-block;
+        width: 42%;
+        padding: 1px;
+        margin: 4vh 2vh;
+    }
+    .menu-horizontal ul li{
+        margin: 1vh;
+    }
+    .breadcrumb {
+        display: flex;
+        margin: 2vh;
+        align-items: center;
+    }
+    .menu-lateral{
+        width: 35%;
+        max-width: 50%;
+        min-width: 35%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 480px){
+    #burger{
+        position: unset;
+    }
+    #logo-header{
+        display: none;
+    }
+    #pesquisa{
+        position: unset;
+        width: 28vh;
+        margin-left: 0vh;
+    }
+    #perfil{
+        position: unset;
+        padding-right: 10vh;
+        padding-top: 2vh;
+    }
+    .noticia{
+        display: inline-block;
+        width: 42%;
+        padding: 1px;
+        margin: 4vh 2vh;
+    }
+    .menu-horizontal ul li{
+        margin: 1vh;
+    }
+    .breadcrumb {
+        display: flex;
+        margin: 2vh;
+        align-items: center;
+      }
+      #footer{
+        display: block;
+    }
+    .conteudo-footer{
+        padding: 2vh;
+        margin-bottom: 6vh;
+        border-bottom: 1px solid !important;
+        border: none;
+        width: 96%;
+    }
+    .topicos {
+        width: 100%;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topicos h3{
+        font-size: 4vh;
+    }
+    .topicos ul{
+        margin: auto;
+    }
+    .menu{
+        text-align: center;
+        margin-bottom: 6vh;
+    }
+    .menu h3{
+        font-size: 4vh;
+        margin-bottom: 2vh;
+    }
+    .logo{
+        margin: auto;
+        width: 30%;
+        text-align: center;
+    }
+    .menu-lateral{
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px){
+    #burger{
+        position: absolute;
+        left: 2vh;
+    }
+    #logo-header img{
+        display: none;
+    }
+    #pesquisa{
+        position: unset;
+        right: 2vh;
+        width: 31vh;
+        height: 3vh;
+        padding: 5px;
+        top: 2vh;
+    }
+    #perfil{
+        display: none;
+    }
+    .breadcrumb {
+        display: flex;
+        padding: 0vh;
+    }
+    .menu-horizontal ul{
+        width: 80%;
+        padding-left: 0vh;
+    }
+    .menu-horizontal ul li{
+    width: 20%;
+    }
+    .noticia{
+        width: 100%;
+        padding: 0;
+        margin: 3vh auto;
+    }
+    #footer{
+        display: block;
+    }
+    .conteudo-footer{
+        padding: 2vh;
+        margin-bottom: 6vh;
+        border-bottom: 1px solid;
+        width: 96%;
+    }
+    .topicos {
+        width: 100%;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topicos h3{
+        font-size: 4vh;
+    }
+    .topicos ul{
+        margin: auto;
+    }
+    .menu{
+        text-align: center;
+        margin-bottom: 6vh;
+    }
+    .menu h3{
+        font-size: 4vh;
+        margin-bottom: 2vh;
+    }
+    .logo{
+        margin: auto;
+        width: 30%;
+        text-align: center;
+    }
+    .menu-lateral{
+      width: 60%;
+  }
+}
+
+/* Página de cadastro */
 #cadastro {
     margin: 2vh;
     margin-left: 51vh;
@@ -367,7 +626,7 @@ form button {
     padding: 10px;
 }
 
-
+/* Responsividade de cadastro */
 @media screen and (min-width: 1324px) and (max-width: 1461px) {
     #cadastro {
         margin-left: 26%;
