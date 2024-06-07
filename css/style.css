@@ -125,6 +125,9 @@ main {
     text-align-last:center;
     margin: 25vh auto 13vh auto;
 }
+main #cadastro{
+    margin: 2px;
+}
 section{
     width: 95%;
     margin: 0 auto;
@@ -546,7 +549,6 @@ footer{
     right: 0;
     padding: 10px;
     color: #fff;
-    font-size: 2vh;
     z-index: 999;
     visibility: hidden;
 }
@@ -557,6 +559,14 @@ footer{
 
 .permissao-cadastro-erro {
     background-color: #690e0e;
+}
+
+.permissao-cadastro-sucesso h5, .permissao-cadastro-erro h5{
+    font-size: 17px;
+}
+
+.permissao-cadastro-sucesso p, .permissao-cadastro-erro p{
+    font-size: 15px;
 }
 
 .permissao-cadastro-sucesso.active {
@@ -641,6 +651,13 @@ form button {
     }
     .permissao-cadastro-erro, .permissao-cadastro-sucesso {
         width: 30%;
+    }
+    .permissao-cadastro-sucesso h5, .permissao-cadastro-erro h5{
+        font-size: 17px;
+    }
+    
+    .permissao-cadastro-sucesso p, .permissao-cadastro-erro p{
+        font-size: 15px;
     }
 }
 
