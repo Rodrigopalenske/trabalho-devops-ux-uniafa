@@ -125,6 +125,9 @@ main {
     text-align-last:center;
     margin: 25vh auto 6vh auto;
 }
+main #cadastro{
+    margin: 2px;
+}
 section{
     width: 95%;
     margin: 0 auto;
@@ -565,9 +568,16 @@ footer{
     right: 0;
     padding: 10px;
     color: #fff;
-    font-size: 2vh;
     z-index: 999;
     visibility: hidden;
+}
+
+.permissao-cadastro-sucesso h5, .permissao-cadastro-erro h5{
+    font-size: 17px;
+}
+
+.permissao-cadastro-sucesso p, .permissao-cadastro-erro p{
+    font-size: 15px;
 }
 
 .permissao-cadastro-sucesso {
